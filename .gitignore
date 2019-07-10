@@ -52,3 +52,5 @@ eagle.epf
 *.lck
 
 *.pdf                                                                       
+Eagle_Libraries/
+*.zip
