@@ -1,2 +1,2 @@
 # doogie_hardware
-Eagle file for doogie board
+Eagle files for doogie board
