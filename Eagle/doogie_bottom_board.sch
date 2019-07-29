@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8228,6 +8228,7 @@ Source: http://www.irf.com/product-info/datasheets/data/irf9530.pdf</description
 <part name="Q6" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="IRF9530" device="" package3d_urn="urn:adsk.eagle:package:29484/3"/>
 <part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="JST-PTH-2" package3d_urn="urn:adsk.eagle:package:38053/1"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VOUT" device="" value="6V"/>
+<part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9042,7 +9043,7 @@ http://ohwr.org/cernohl</text>
 <wire x1="106.68" y1="73.66" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="FILLING_POLYGON" class="0">
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="152.4" y1="109.22" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
@@ -9173,7 +9174,7 @@ http://ohwr.org/cernohl</text>
 <junction x="91.44" y="127"/>
 </segment>
 </net>
-<net name="VOUT" class="0">
+<net name="6V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN+"/>
 <wire x1="147.32" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
@@ -9387,7 +9388,7 @@ http://ohwr.org/cernohl</text>
 <label x="180.34" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="FILLING_POLYGON" class="0">
 <segment>
 <wire x1="185.42" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
@@ -9421,25 +9422,11 @@ http://ohwr.org/cernohl</text>
 <junction x="129.54" y="127"/>
 </segment>
 </net>
-<net name="LEFT_FRONT_EMITTER" class="0">
+<net name="LEFT_EMITTER_CTRL" class="0">
 <segment>
 <label x="48.26" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LEFT_RIGHT_EMITTERS" class="0">
-<segment>
-<label x="104.14" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RIGHT_FRONT_EMITTER" class="0">
-<segment>
-<label x="160.02" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9505,7 +9492,7 @@ http://ohwr.org/cernohl</text>
 <wire x1="175.26" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VOUT" class="0">
+<net name="6V" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="73.66" y1="91.44" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
@@ -9518,6 +9505,20 @@ http://ohwr.org/cernohl</text>
 <junction x="129.54" y="101.6"/>
 <wire x1="129.54" y1="106.68" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VOUT"/>
+</segment>
+</net>
+<net name="RIGHT_EMITTER_CTRL" class="0">
+<segment>
+<label x="160.02" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FRONT_EMITTERS_CTRL" class="0">
+<segment>
+<label x="104.14" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9559,11 +9560,11 @@ http://ohwr.org/cernohl</text>
 <attribute name="VALUE" x="177.8" y="48.514" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="177.8" y="84.328" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND13" gate="1" x="193.04" y="109.22" smashed="yes">
-<attribute name="VALUE" x="193.04" y="108.966" size="1.778" layer="96" align="top-center"/>
+<instance part="GND13" gate="1" x="190.5" y="109.22" smashed="yes">
+<attribute name="VALUE" x="190.5" y="108.966" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="193.04" y="88.9" smashed="yes">
-<attribute name="VALUE" x="193.04" y="91.694" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="190.5" y="88.9" smashed="yes">
+<attribute name="VALUE" x="190.5" y="91.694" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND11" gate="1" x="58.42" y="124.46" smashed="yes">
 <attribute name="VALUE" x="58.42" y="124.206" size="1.778" layer="96" align="top-center"/>
@@ -9571,11 +9572,14 @@ http://ohwr.org/cernohl</text>
 <instance part="GND12" gate="1" x="58.42" y="60.96" smashed="yes">
 <attribute name="VALUE" x="58.42" y="60.706" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="203.2" y="88.9" smashed="yes">
-<attribute name="VALUE" x="203.2" y="91.694" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="200.66" y="88.9" smashed="yes">
+<attribute name="VALUE" x="200.66" y="91.694" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="213.36" y="88.9" smashed="yes">
-<attribute name="VALUE" x="213.36" y="91.694" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY7" gate="G$1" x="210.82" y="88.9" smashed="yes">
+<attribute name="VALUE" x="210.82" y="91.694" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND6" gate="1" x="190.5" y="45.72" smashed="yes">
+<attribute name="VALUE" x="190.5" y="45.466" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -9602,16 +9606,16 @@ http://ohwr.org/cernohl</text>
 <label x="55.88" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="FILLING_POLYGON" class="0">
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="193.04" y1="111.76" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="111.76" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="116.84" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
-<junction x="193.04" y="116.84"/>
+<wire x1="190.5" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="10"/>
+<wire x1="187.96" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="139.7" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
+<junction x="190.5" y="119.38"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -9624,6 +9628,12 @@ http://ohwr.org/cernohl</text>
 <wire x1="60.96" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="71.12" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="190.5" y1="48.26" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="8"/>
+<wire x1="190.5" y1="71.12" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -9642,50 +9652,43 @@ http://ohwr.org/cernohl</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="12"/>
 <pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
-<wire x1="187.96" y1="81.28" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="81.28" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="81.28" x2="190.5" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_PWM" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="10"/>
-<wire x1="187.96" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
-<label x="193.04" y="139.7" size="1.27" layer="95" xref="yes"/>
+<label x="193.04" y="129.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="187.96" y1="129.54" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_EN2" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="187.96" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
-<label x="193.04" y="134.62" size="1.27" layer="95" xref="yes"/>
+<label x="193.04" y="132.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="187.96" y1="132.08" x2="193.04" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_EN1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="9"/>
-<wire x1="193.04" y1="137.16" x2="187.96" y2="137.16" width="0.1524" layer="91"/>
-<label x="193.04" y="137.16" size="1.27" layer="95" xref="yes"/>
+<label x="193.04" y="134.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="8"/>
+<wire x1="187.96" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_RIGHT_EN1" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="187.96" y1="66.04" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
-<label x="193.04" y="66.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="MOTOR_RIGHT_EN2" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="187.96" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<label x="193.04" y="63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="7"/>
+<wire x1="187.96" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<label x="193.04" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_RIGHT_PWM" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="7"/>
-<wire x1="187.96" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
-<label x="193.04" y="68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="187.96" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<label x="193.04" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_ENCB" class="0">
@@ -9695,9 +9698,9 @@ http://ohwr.org/cernohl</text>
 <label x="81.28" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="193.04" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
-<label x="193.04" y="121.92" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="187.96" y1="124.46" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+<label x="193.04" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_ENCA" class="0">
@@ -9707,9 +9710,9 @@ http://ohwr.org/cernohl</text>
 <label x="55.88" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="187.96" y1="124.46" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
-<label x="193.04" y="124.46" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="193.04" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
+<label x="193.04" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_RIGHT_ENCA" class="0">
@@ -9731,25 +9734,11 @@ http://ohwr.org/cernohl</text>
 <label x="193.04" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LEFT_FRONT_EMITTER" class="0">
+<net name="LEFT_EMITTER_CTRL" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="11"/>
-<wire x1="193.04" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
-<label x="193.04" y="142.24" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="H-BRIDGE_!STDBY" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="193.04" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
-<label x="193.04" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LEFT_RIGHT_EMITTER" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="187.96" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
-<label x="193.04" y="60.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
+<label x="193.04" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LEFT_RCVR" class="0">
@@ -9766,14 +9755,7 @@ http://ohwr.org/cernohl</text>
 <label x="193.04" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="RIGHT_FRONT_EMITTER" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="8"/>
-<wire x1="187.96" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
-<label x="193.04" y="71.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="RIGHT_RCVR" class="0">
+<net name="RIGHT_EMITTER_CTRL" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="187.96" y1="58.42" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
@@ -9792,13 +9774,6 @@ http://ohwr.org/cernohl</text>
 <label x="81.28" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LEFT_RIGHT_EMITTERS" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="187.96" y1="129.54" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
-<label x="193.04" y="129.54" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="MOTOR_RIGHT_O1" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="6"/>
@@ -9809,17 +9784,45 @@ http://ohwr.org/cernohl</text>
 <net name="V_BATT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="11"/>
-<wire x1="187.96" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="78.74" x2="203.2" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="78.74" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="V_BATT"/>
 </segment>
 </net>
-<net name="VOUT" class="0">
+<net name="6V" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="10"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VOUT"/>
-<wire x1="187.96" y1="76.2" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="76.2" x2="213.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="76.2" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FRONT_EMITTERS_CTRL" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="11"/>
+<wire x1="193.04" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<label x="193.04" y="142.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RIGHT_RCVR" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="187.96" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
+<label x="193.04" y="60.96" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MOTOR_RIGHT_EN2" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="187.96" y1="66.04" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
+<label x="193.04" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="H-BRIDGE_!STDBY" class="0">
+<segment>
+<label x="193.04" y="137.16" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="9"/>
+<wire x1="187.96" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
