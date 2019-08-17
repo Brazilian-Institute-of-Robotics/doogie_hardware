@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -26,7 +26,7 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="14" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
@@ -60,7 +60,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="14" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -185,111 +185,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="maze">
-<packages>
-<package name="SFH4545-AK">
-<pad name="K" x="1.27" y="0" drill="0.8" shape="square"/>
-<pad name="A" x="-1.27" y="0" drill="0.8"/>
-<text x="3.645" y="1.181" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.645" y="-0.551" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<wire x1="-3" y1="0.7" x2="2.5" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.1" layer="21"/>
-<wire x1="2.5" y1="1.6" x2="2.5" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="1.6" x2="-2.5" y2="6.1" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="6.1" x2="0" y2="8.6" width="0.1" layer="21" curve="-90"/>
-<wire x1="0" y1="8.6" x2="2.5" y2="6.1" width="0.1" layer="21" curve="-90"/>
-<wire x1="2.5" y1="6.1" x2="2.5" y2="1.6" width="0.1" layer="21"/>
-<circle x="0" y="3.9" radius="0.08" width="0.1" layer="21"/>
-<text x="-2.08" y="0.5" size="1.016" layer="21" rot="R180">A</text>
-<text x="2.98" y="0.5" size="1.016" layer="21" rot="R180">K</text>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.6096" layer="51"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="0.635" width="0.6096" layer="51"/>
-<wire x1="-2.5" y1="1.6" x2="-3" y2="1.6" width="0.1" layer="21"/>
-<wire x1="-3" y1="1.6" x2="-3" y2="0.7" width="0.1" layer="21"/>
-<wire x1="0" y1="3.9" x2="-23" y2="266.9" width="0.127" layer="46"/>
-<wire x1="0" y1="3.9" x2="23" y2="266.9" width="0.127" layer="46"/>
-<wire x1="-23" y1="266.9" x2="23" y2="266.9" width="0.127" layer="46"/>
-</package>
-<package name="SFH4545-KA">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;</description>
-<pad name="K" x="-1.27" y="0" drill="0.8" shape="square"/>
-<pad name="A" x="1.27" y="0" drill="0.8"/>
-<text x="3.645" y="1.181" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.645" y="-0.551" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<wire x1="-2.5" y1="0.7" x2="3" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="0.7" x2="-2.5" y2="1.6" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.1" layer="21"/>
-<wire x1="2.5" y1="1.6" x2="3" y2="1.6" width="0.1" layer="21"/>
-<wire x1="3" y1="1.6" x2="3" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="1.6" x2="-2.5" y2="6.1" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="6.1" x2="0" y2="8.6" width="0.1" layer="21" curve="-90"/>
-<wire x1="0" y1="8.6" x2="2.5" y2="6.1" width="0.1" layer="21" curve="-90"/>
-<wire x1="2.5" y1="6.1" x2="2.5" y2="1.6" width="0.1" layer="21"/>
-<circle x="0" y="3.9" radius="0.08" width="0.1" layer="21"/>
-<text x="3" y="0.5" size="1.016" layer="21" rot="R180">A</text>
-<text x="-2.1" y="0.5" size="1.016" layer="21" rot="R180">K</text>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.6096" layer="51"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="0.635" width="0.6096" layer="51"/>
-<wire x1="0" y1="3.9" x2="-23" y2="266.9" width="0.127" layer="46"/>
-<wire x1="0" y1="3.9" x2="23" y2="266.9" width="0.127" layer="46"/>
-<wire x1="-23" y1="266.9" x2="23" y2="266.9" width="0.127" layer="46"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LED">
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="K" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SFH4545" prefix="LED">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="AK" package="SFH4545-AK">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="KA" package="SFH4545-KA">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -513,10 +408,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="doogie">
 <packages>
 <package name="BATTERY_HOLDER">
-<wire x1="-38" y1="10.5" x2="38" y2="10.5" width="0.127" layer="21"/>
-<wire x1="38" y1="10.5" x2="38" y2="-10.5" width="0.127" layer="21"/>
-<wire x1="38" y1="-10.5" x2="-38" y2="-10.5" width="0.127" layer="21"/>
-<wire x1="-38" y1="-10.5" x2="-38" y2="10.5" width="0.127" layer="21"/>
+<wire x1="-38" y1="10.5" x2="38" y2="10.5" width="0.2032" layer="21"/>
+<wire x1="38" y1="10.5" x2="38" y2="-10.5" width="0.2032" layer="21"/>
+<wire x1="38" y1="-10.5" x2="-38" y2="-10.5" width="0.2032" layer="21"/>
+<wire x1="-38" y1="-10.5" x2="-38" y2="10.5" width="0.2032" layer="21"/>
 <text x="0" y="-3.81" size="1.6764" layer="25" font="vector" ratio="24" align="bottom-center">&gt;NAME</text>
 <hole x="0" y="0" drill="3"/>
 </package>
@@ -537,8 +432,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="E" x="1.27" y="0" drill="0.8" shape="square"/>
 <text x="3.645" y="1.181" size="1.27" layer="25" font="vector" ratio="24">&gt;NAME</text>
 <text x="3.645" y="-0.551" size="1.27" layer="27" font="vector" ratio="24">&gt;VALUE</text>
-<text x="-2.08" y="0.5" size="0.8128" layer="21" font="vector" ratio="24" rot="R180">C</text>
-<text x="2.98" y="0.5" size="0.8128" layer="21" font="vector" ratio="24" rot="R180">E</text>
+<text x="-2.08" y="0.5" size="1.016" layer="21" font="vector" ratio="20" rot="R180">C</text>
+<text x="2.98" y="0.5" size="1.016" layer="21" font="vector" ratio="20" rot="R180">E</text>
 </package>
 <package name="M9040P" urn="urn:adsk.eagle:footprint:27535/1" locally_modified="yes">
 <description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;&lt;p&gt;
@@ -569,6 +464,29 @@ Marquardt</description>
 <text x="-3.429" y="-6.985" size="1.778" layer="27" font="vector" ratio="25" distance="40" align="top-left">&gt;VALUE</text>
 <wire x1="3.5" y1="6.5" x2="3.5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="6.5" x2="-3.5" y2="-6.5" width="0.127" layer="21"/>
+</package>
+<package name="SFH4545-AK">
+<circle x="0" y="3.9" radius="0.08" width="0.1" layer="21"/>
+<wire x1="-3" y1="0.7" x2="2.5" y2="0.7" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="0.7" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="6.1" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="6.1" x2="0" y2="8.6" width="0.1" layer="21" curve="-90"/>
+<wire x1="0" y1="8.6" x2="2.5" y2="6.1" width="0.1" layer="21" curve="-90"/>
+<wire x1="2.5" y1="6.1" x2="2.5" y2="1.6" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.6096" layer="51"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="0.635" width="0.6096" layer="51"/>
+<wire x1="-2.5" y1="1.6" x2="-3" y2="1.6" width="0.1" layer="21"/>
+<wire x1="-3" y1="1.6" x2="-3" y2="0.7" width="0.1" layer="21"/>
+<wire x1="0" y1="3.9" x2="-23" y2="266.9" width="0.127" layer="51"/>
+<wire x1="0" y1="3.9" x2="23" y2="266.9" width="0.127" layer="51"/>
+<wire x1="-23" y1="266.9" x2="23" y2="266.9" width="0.127" layer="51"/>
+<pad name="A" x="-1.27" y="0" drill="0.8"/>
+<pad name="K" x="1.27" y="0" drill="0.8" shape="square"/>
+<text x="3.645" y="1.181" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.645" y="-0.551" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.08" y="0.5" size="1.016" layer="21" font="vector" ratio="20" rot="R180">A</text>
+<text x="2.98" y="0.5" size="1.016" layer="21" font="vector" ratio="20" rot="R180">K</text>
 </package>
 </packages>
 <packages3d>
@@ -674,6 +592,30 @@ Marquardt</description>
 <pin name="S" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="O" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
+<symbol name="LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME_A4P">
@@ -741,6 +683,22 @@ Marquardt</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:27676/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SFH4545" prefix="D">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SFH4545-AK">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8159,12 +8117,12 @@ Source: http://www.irf.com/product-info/datasheets/data/irf9530.pdf</description
 </class>
 </classes>
 <parts>
-<part name="D1" library="maze" deviceset="SFH4545" device="AK" value="SFH4545"/>
-<part name="D4" library="maze" deviceset="SFH4545" device="KA" value="SFH4545KA"/>
+<part name="D1" library="doogie" deviceset="SFH4545" device="" value="SFH4545"/>
+<part name="D4" library="doogie" deviceset="SFH4545" device="" value="SFH4545"/>
 <part name="Q1" library="doogie" deviceset="TEFT4300_5MM_RA" device="" value="TEFT4300"/>
 <part name="Q4" library="doogie" deviceset="TEFT4300_5MM_RA" device="" value="TEFT4300"/>
-<part name="D2" library="maze" deviceset="SFH4545" device="KA" value="SFH4545"/>
-<part name="D3" library="maze" deviceset="SFH4545" device="KA" value="SFH4545"/>
+<part name="D2" library="doogie" deviceset="SFH4545" device="" value="SFH4545"/>
+<part name="D3" library="doogie" deviceset="SFH4545" device="" value="SFH4545"/>
 <part name="Q2" library="doogie" deviceset="TEFT4300_5MM_RA" device="" value="TEFT4300"/>
 <part name="Q3" library="doogie" deviceset="TEFT4300_5MM_RA" device="" value="TEFT4300"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="33R"/>
@@ -9318,14 +9276,14 @@ http://ohwr.org/cernohl</text>
 <nets>
 <net name="N$15" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="K"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="78.74" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="D4" gate="G$1" pin="K"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="78.74" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -9333,14 +9291,14 @@ http://ohwr.org/cernohl</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
-<pinref part="D2" gate="G$1" pin="K"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="129.54" y1="88.9" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="D3" gate="G$1" pin="K"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="129.54" y1="78.74" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
