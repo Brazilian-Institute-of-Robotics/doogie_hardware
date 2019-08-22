@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -308,6 +308,97 @@
 <wire x1="50.1" y1="-0.5" x2="58.1" y2="-0.5" width="0.127" layer="51"/>
 <wire x1="58.1" y1="-0.5" x2="57.85" y2="0" width="0.127" layer="51"/>
 </package>
+<package name="ADC-4CH-ADS1115">
+<description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip</description>
+<wire x1="-8.89" y1="14.224" x2="8.89" y2="14.224" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-14.224" x2="-8.89" y2="-14.224" width="0.127" layer="21"/>
+<pad name="1" x="-6.35" y="11.43" drill="1" shape="square"/>
+<pad name="2" x="-6.35" y="8.89" drill="1"/>
+<pad name="3" x="-6.35" y="6.35" drill="1"/>
+<pad name="4" x="-6.35" y="3.81" drill="1"/>
+<pad name="5" x="-6.35" y="1.27" drill="1"/>
+<pad name="6" x="-6.35" y="-1.27" drill="1"/>
+<pad name="7" x="-6.35" y="-3.81" drill="1"/>
+<wire x1="-7.62" y1="-4.445" x2="-7.62" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-1.905" x2="-7.62" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="3.175" x2="-7.62" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="5.715" x2="-7.62" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="8.255" x2="-7.62" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="10.795" x2="-7.62" y2="12.065" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="12.065" x2="-6.985" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="12.7" x2="-5.715" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="12.7" x2="-5.08" y2="12.065" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="12.065" x2="-5.08" y2="10.795" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.795" x2="-5.715" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="10.16" x2="-5.08" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="9.525" x2="-5.08" y2="8.255" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="8.255" x2="-5.715" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="7.62" x2="-5.08" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="6.985" x2="-5.08" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.715" x2="-5.715" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="5.08" x2="-5.08" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.445" x2="-5.08" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.175" x2="-5.715" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="2.54" x2="-5.08" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.715" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="0" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.715" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="-2.54" x2="-5.08" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.715" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="-5.08" x2="-7.62" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-3.175" x2="-6.985" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="-2.54" x2="-7.62" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="0" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="0" x2="-7.62" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="1.905" x2="-6.985" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="2.54" x2="-7.62" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="4.445" x2="-6.985" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="5.08" x2="-7.62" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="6.985" x2="-6.985" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="7.62" x2="-7.62" y2="8.255" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="9.525" x2="-6.985" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="10.16" x2="-7.62" y2="10.795" width="0.127" layer="21"/>
+<text x="0" y="15.24" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-15.24" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<pad name="8" x="-6.35" y="-6.35" drill="1"/>
+<wire x1="-6.985" y1="-5.08" x2="-7.62" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-5.715" x2="-7.62" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-6.985" x2="-6.985" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="-7.62" x2="-5.08" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-6.985" x2="-5.08" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-5.715" x2="-5.715" y2="-5.08" width="0.127" layer="21"/>
+<text x="-4.445" y="11.43" size="1.27" layer="21" align="center-left">VDD</text>
+<text x="-4.445" y="8.89" size="1.27" layer="21" align="center-left">GND</text>
+<text x="-4.445" y="6.35" size="1.27" layer="21" align="center-left">SCL</text>
+<text x="-4.445" y="3.81" size="1.27" layer="21" align="center-left">SDA</text>
+<text x="-4.445" y="1.27" size="1.27" layer="21" align="center-left">ADDR</text>
+<text x="-4.445" y="-1.27" size="1.27" layer="21" align="center-left">ALRT</text>
+<text x="-4.445" y="-3.81" size="1.27" layer="21" align="center-left">A0</text>
+<text x="-4.445" y="-6.35" size="1.27" layer="21" align="center-left">A1</text>
+<pad name="9" x="-6.35" y="-8.89" drill="1"/>
+<pad name="10" x="-6.35" y="-11.43" drill="1"/>
+<wire x1="-6.985" y1="-7.62" x2="-7.62" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-8.255" x2="-7.62" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-9.525" x2="-6.985" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="-10.16" x2="-7.62" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-10.795" x2="-7.62" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-12.065" x2="-6.985" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="-12.7" x2="-5.715" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="-12.7" x2="-5.08" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-12.065" x2="-5.08" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-10.795" x2="-5.715" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="-10.16" x2="-5.08" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-9.525" x2="-5.08" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-8.255" x2="-5.715" y2="-7.62" width="0.127" layer="21"/>
+<text x="-4.445" y="-8.89" size="1.27" layer="21" align="center-left">A2</text>
+<text x="-4.445" y="-11.43" size="1.27" layer="21" align="center-left">A3</text>
+<wire x1="8.89" y1="14.224" x2="8.89" y2="-14.224" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="14.224" x2="-8.89" y2="-14.224" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAME_A4P">
@@ -418,6 +509,25 @@
 <text x="-20.32" y="35.56" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="-20.32" y="33.655" size="1.27" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="ADC-4CH-ADS1115">
+<description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip</description>
+<pin name="VDD" x="-15.24" y="12.7" length="middle" direction="pwr"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-15.24" y="10.16" length="middle" direction="pwr"/>
+<pin name="SCL" x="-15.24" y="7.62" length="middle"/>
+<pin name="SDA" x="-15.24" y="5.08" length="middle"/>
+<pin name="ADDR" x="-15.24" y="2.54" length="middle"/>
+<pin name="ALRT" x="-15.24" y="0" length="middle"/>
+<pin name="A0" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="A1" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="-12.7" length="middle" direction="in"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME_A4P">
@@ -521,6 +631,37 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="ADC-4CH-ADS1115">
+<description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip
+&lt;p&gt;Arduino &lt;b&gt;ADS1115&lt;/b&gt; Getting Started Tutorial is available here:&lt;br /&gt;
+&lt;a href="http://henrysbench.capnfatz.com/henrys-bench/arduino-voltage-measurements/arduino-ads1115-module-getting-started-tutorial/"&gt;http://henrysbench.capnfatz.com/henrys-bench/arduino-voltage-measurements/arduino-ads1115-module-getting-started-tutorial/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ADS1115&lt;/b&gt; datasheet is available here:&lt;br /&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/ads1115.pdf"&gt;http://www.ti.com/lit/ds/symlink/ads1115.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/ads1115+module"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=ADC-4CH-ADS1115"&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADC-4CH-ADS1115" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADC-4CH-ADS1115">
+<connects>
+<connect gate="G$1" pin="A0" pad="7"/>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="A2" pad="9"/>
+<connect gate="G$1" pin="A3" pad="10"/>
+<connect gate="G$1" pin="ADDR" pad="5"/>
+<connect gate="G$1" pin="ALRT" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="gy-521">
@@ -592,173 +733,6 @@
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="XCL" pad="XCL"/>
 <connect gate="G$1" pin="XDA" pad="XDA"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="diy-modules">
-<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
-&lt;br&gt;&lt;br&gt;
-The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
-The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
-&lt;br&gt;
-By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
-&lt;br&gt;
-The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
-&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;center&gt;
-&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
-&lt;/center&gt;</description>
-<packages>
-<package name="ADC-4CH-ADS1115">
-<description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip</description>
-<wire x1="-8.89" y1="14.224" x2="8.89" y2="14.224" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-14.224" x2="-8.89" y2="-14.224" width="0.127" layer="21"/>
-<pad name="1" x="-6.35" y="11.43" drill="1" shape="square"/>
-<pad name="2" x="-6.35" y="8.89" drill="1"/>
-<pad name="3" x="-6.35" y="6.35" drill="1"/>
-<pad name="4" x="-6.35" y="3.81" drill="1"/>
-<pad name="5" x="-6.35" y="1.27" drill="1"/>
-<pad name="6" x="-6.35" y="-1.27" drill="1"/>
-<pad name="7" x="-6.35" y="-3.81" drill="1"/>
-<wire x1="-7.62" y1="-4.445" x2="-7.62" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-1.905" x2="-7.62" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="0.635" x2="-7.62" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="3.175" x2="-7.62" y2="4.445" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="5.715" x2="-7.62" y2="6.985" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="8.255" x2="-7.62" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="10.795" x2="-7.62" y2="12.065" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="12.065" x2="-6.985" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="12.7" x2="-5.715" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="12.7" x2="-5.08" y2="12.065" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="12.065" x2="-5.08" y2="10.795" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="10.795" x2="-5.715" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="10.16" x2="-5.08" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="9.525" x2="-5.08" y2="8.255" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="8.255" x2="-5.715" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="7.62" x2="-5.08" y2="6.985" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="6.985" x2="-5.08" y2="5.715" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="5.715" x2="-5.715" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="5.08" x2="-5.08" y2="4.445" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="4.445" x2="-5.08" y2="3.175" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="3.175" x2="-5.715" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="2.54" x2="-5.08" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="1.905" x2="-5.08" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.715" y2="0" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="0" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-1.905" x2="-5.715" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="-2.54" x2="-5.08" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.715" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="-5.08" x2="-7.62" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-3.175" x2="-6.985" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="-2.54" x2="-7.62" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="0" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="0" x2="-7.62" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-6.985" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="2.54" x2="-7.62" y2="3.175" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="4.445" x2="-6.985" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="5.08" x2="-7.62" y2="5.715" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="6.985" x2="-6.985" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="7.62" x2="-7.62" y2="8.255" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="9.525" x2="-6.985" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="10.16" x2="-7.62" y2="10.795" width="0.127" layer="21"/>
-<text x="0" y="15.24" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-15.24" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<pad name="8" x="-6.35" y="-6.35" drill="1"/>
-<wire x1="-6.985" y1="-5.08" x2="-7.62" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-5.715" x2="-7.62" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-6.985" x2="-6.985" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="-7.62" x2="-5.08" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-6.985" x2="-5.08" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-5.715" x2="-5.715" y2="-5.08" width="0.127" layer="21"/>
-<text x="-4.445" y="11.43" size="1.27" layer="21" align="center-left">VDD</text>
-<text x="-4.445" y="8.89" size="1.27" layer="21" align="center-left">GND</text>
-<text x="-4.445" y="6.35" size="1.27" layer="21" align="center-left">SCL</text>
-<text x="-4.445" y="3.81" size="1.27" layer="21" align="center-left">SDA</text>
-<text x="-4.445" y="1.27" size="1.27" layer="21" align="center-left">ADDR</text>
-<text x="-4.445" y="-1.27" size="1.27" layer="21" align="center-left">ALRT</text>
-<text x="-4.445" y="-3.81" size="1.27" layer="21" align="center-left">A0</text>
-<text x="-4.445" y="-6.35" size="1.27" layer="21" align="center-left">A1</text>
-<pad name="9" x="-6.35" y="-8.89" drill="1"/>
-<pad name="10" x="-6.35" y="-11.43" drill="1"/>
-<wire x1="-6.985" y1="-7.62" x2="-7.62" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-8.255" x2="-7.62" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-9.525" x2="-6.985" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="-10.16" x2="-7.62" y2="-10.795" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-10.795" x2="-7.62" y2="-12.065" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-12.065" x2="-6.985" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="-12.7" x2="-5.715" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="-12.7" x2="-5.08" y2="-12.065" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-12.065" x2="-5.08" y2="-10.795" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-10.795" x2="-5.715" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="-10.16" x2="-5.08" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-9.525" x2="-5.08" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-8.255" x2="-5.715" y2="-7.62" width="0.127" layer="21"/>
-<text x="-4.445" y="-8.89" size="1.27" layer="21" align="center-left">A2</text>
-<text x="-4.445" y="-11.43" size="1.27" layer="21" align="center-left">A3</text>
-<wire x1="8.89" y1="14.224" x2="8.89" y2="-14.224" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="14.224" x2="-8.89" y2="-14.224" width="0.127" layer="21"/>
-<hole x="6.604" y="11.43" drill="3.1"/>
-<hole x="6.604" y="-11.43" drill="3.1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ADC-4CH-ADS1115">
-<description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip</description>
-<pin name="VDD" x="-15.24" y="12.7" length="middle" direction="pwr"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<text x="-10.16" y="20.32" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="-15.24" y="10.16" length="middle" direction="pwr"/>
-<pin name="SCL" x="-15.24" y="7.62" length="middle"/>
-<pin name="SDA" x="-15.24" y="5.08" length="middle"/>
-<pin name="ADDR" x="-15.24" y="2.54" length="middle"/>
-<pin name="ALRT" x="-15.24" y="0" length="middle"/>
-<pin name="A0" x="-15.24" y="-5.08" length="middle" direction="in"/>
-<pin name="A1" x="-15.24" y="-7.62" length="middle" direction="in"/>
-<pin name="A2" x="-15.24" y="-10.16" length="middle" direction="in"/>
-<pin name="A3" x="-15.24" y="-12.7" length="middle" direction="in"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADC-4CH-ADS1115">
-<description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip
-&lt;p&gt;Arduino &lt;b&gt;ADS1115&lt;/b&gt; Getting Started Tutorial is available here:&lt;br /&gt;
-&lt;a href="http://henrysbench.capnfatz.com/henrys-bench/arduino-voltage-measurements/arduino-ads1115-module-getting-started-tutorial/"&gt;http://henrysbench.capnfatz.com/henrys-bench/arduino-voltage-measurements/arduino-ads1115-module-getting-started-tutorial/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;ADS1115&lt;/b&gt; datasheet is available here:&lt;br /&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/ads1115.pdf"&gt;http://www.ti.com/lit/ds/symlink/ads1115.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/ads1115+module"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=ADC-4CH-ADS1115"&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADC-4CH-ADS1115" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ADC-4CH-ADS1115">
-<connects>
-<connect gate="G$1" pin="A0" pad="7"/>
-<connect gate="G$1" pin="A1" pad="8"/>
-<connect gate="G$1" pin="A2" pad="9"/>
-<connect gate="G$1" pin="A3" pad="10"/>
-<connect gate="G$1" pin="ADDR" pad="5"/>
-<connect gate="G$1" pin="ALRT" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="SCL" pad="3"/>
-<connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7953,7 +7927,7 @@ general purpose rectifier, 1 A</description>
 </part>
 <part name="U$2" library="doogie" deviceset="RPI-ZERO" device=""/>
 <part name="U1" library="gy-521" deviceset="GY-521" device="MPU6050"/>
-<part name="U$3" library="diy-modules" deviceset="ADC-4CH-ADS1115" device=""/>
+<part name="U$3" library="doogie" deviceset="ADC-4CH-ADS1115" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="U$4" library="doogie" deviceset="FRAME_A4P" device="">
 <attribute name="DESIGNER_NAME" value="MATEUS MENEZES"/>
@@ -8212,14 +8186,14 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="MOTOR_RIGHT_PWM" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO12"/>
-<wire x1="142.24" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
-<label x="152.4" y="86.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <label x="205.74" y="78.74" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="200.66" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO19"/>
+<wire x1="93.98" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
+<label x="83.82" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_RIGHT_EN1" class="0">
@@ -8229,9 +8203,9 @@ general purpose rectifier, 1 A</description>
 <wire x1="200.66" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO5"/>
-<wire x1="93.98" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
-<label x="83.82" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="83.82" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="GPIO6"/>
+<wire x1="93.98" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_RIGHT_EN2" class="0">
@@ -8241,21 +8215,21 @@ general purpose rectifier, 1 A</description>
 <wire x1="200.66" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO6"/>
-<wire x1="93.98" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<label x="83.82" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="GPIO12"/>
+<wire x1="142.24" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
+<label x="152.4" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_PWM" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO19"/>
-<wire x1="93.98" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
-<label x="83.82" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="200.66" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 <label x="205.74" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO18"/>
+<wire x1="142.24" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
+<label x="152.4" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_LEFT_EN1" class="0">
@@ -8265,9 +8239,9 @@ general purpose rectifier, 1 A</description>
 <pinref part="J1" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO18"/>
-<wire x1="142.24" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
-<label x="152.4" y="111.76" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="GPIO27/GEN2"/>
+<wire x1="93.98" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<label x="83.82" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="H-BRIDGE_!STDBY" class="0">
@@ -8277,9 +8251,9 @@ general purpose rectifier, 1 A</description>
 <pinref part="J1" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO27/GEN2"/>
-<wire x1="93.98" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
-<label x="83.82" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="GEN4/GPIO23"/>
+<wire x1="142.24" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
+<label x="152.4" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8399,11 +8373,11 @@ general purpose rectifier, 1 A</description>
 <wire x1="226.06" y1="91.44" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ADC_A0_CHANNEL_CTRL" class="0">
+<net name="ADC_A1_CHANNEL_CTRL" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO9/MISO"/>
-<wire x1="93.98" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<label x="83.82" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="83.82" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="GPIO11/SCLK"/>
+<wire x1="93.98" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEFT_EMITTER_CTRL" class="0">
@@ -8652,9 +8626,9 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="LEFT_FRONT_RCVR" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A1"/>
-<wire x1="182.88" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
-<label x="172.72" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="A0"/>
+<wire x1="182.88" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
+<label x="172.72" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RIGHT_FRONT_RCVR" class="0">
@@ -8742,18 +8716,6 @@ general purpose rectifier, 1 A</description>
 <pinref part="SUPPLY6" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
-<net name="ADC_A0_CHANNEL" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="A0"/>
-<wire x1="182.88" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
-<label x="172.72" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="Z"/>
-<wire x1="55.88" y1="60.96" x2="50.8" y2="60.96" width="0.127" layer="91"/>
-<label x="50.8" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="LEFT_RCVR" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="Y0"/>
@@ -8772,7 +8734,19 @@ general purpose rectifier, 1 A</description>
 <junction x="104.14" y="68.58"/>
 </segment>
 </net>
-<net name="ADC_A0_CHANNEL_CTRL" class="0">
+<net name="ADC_A1_CHANNEL" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="A1"/>
+<wire x1="182.88" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
+<label x="172.72" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="Z"/>
+<wire x1="55.88" y1="60.96" x2="50.8" y2="60.96" width="0.127" layer="91"/>
+<label x="50.8" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC_A1_CHANNEL_CTRL" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="S0"/>
 <wire x1="55.88" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
