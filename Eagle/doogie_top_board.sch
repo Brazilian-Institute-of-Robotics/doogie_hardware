@@ -7762,14 +7762,14 @@ LED</description>
 <packages>
 <package name="U1V10F5">
 <text x="-5.715" y="4.826" size="1.016" layer="25" font="vector" ratio="25">&gt;NAME</text>
-<text x="0" y="-4.953" size="1.016" layer="27" font="vector" ratio="25" align="top-center">U1V10F5</text>
+<text x="-0.127" y="0" size="1.016" layer="25" font="vector" ratio="25" rot="R90" align="center">U1V10F5</text>
 <pad name="VIN" x="-4.445" y="2.54" drill="1" shape="square"/>
 <pad name="GND" x="-4.445" y="0" drill="1"/>
 <pad name="VOUT" x="-4.445" y="-2.54" drill="1"/>
-<wire x1="-5.715" y1="4.445" x2="5.715" y2="4.445" width="0.127" layer="21"/>
-<wire x1="5.715" y1="4.445" x2="5.715" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="5.715" y1="-4.445" x2="-5.715" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="-4.445" x2="-5.715" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-5.715" y1="4.445" x2="5.715" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="4.445" x2="5.715" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-4.445" x2="-5.715" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-4.445" x2="-5.715" y2="4.445" width="0.2032" layer="21"/>
 <text x="-6.096" y="2.54" size="1.016" layer="21" font="vector" ratio="25" align="center-right">VIN</text>
 <text x="-6.096" y="0" size="1.016" layer="25" font="vector" ratio="25" align="center-right">GND</text>
 <text x="-6.096" y="-2.54" size="1.016" layer="25" font="vector" ratio="25" align="center-right">VOUT</text>
