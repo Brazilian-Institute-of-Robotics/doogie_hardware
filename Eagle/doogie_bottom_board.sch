@@ -488,6 +488,30 @@ Marquardt</description>
 <text x="-2.08" y="0.5" size="1.016" layer="21" font="vector" ratio="20" rot="R180">A</text>
 <text x="2.98" y="0.5" size="1.016" layer="21" font="vector" ratio="20" rot="R180">K</text>
 </package>
+<package name="TB6612FNG">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
+<text x="-7.62" y="11.811" size="1.27" layer="25" font="vector" ratio="20" align="top-left">&gt;NAME</text>
+<text x="0" y="-1.524" size="1.27" layer="25" font="vector" ratio="20" align="center">&gt;VALUE</text>
+<pad name="1" x="-6.731" y="8.89" drill="1" shape="square"/>
+<pad name="2" x="-6.731" y="6.35" drill="1" shape="octagon"/>
+<pad name="3" x="-6.731" y="3.81" drill="1" shape="octagon"/>
+<pad name="4" x="-6.731" y="1.27" drill="1" shape="octagon"/>
+<pad name="5" x="-6.731" y="-1.27" drill="1" shape="octagon"/>
+<pad name="6" x="-6.731" y="-3.81" drill="1" shape="octagon"/>
+<pad name="7" x="-6.731" y="-6.35" drill="1" shape="octagon"/>
+<pad name="8" x="-6.731" y="-8.89" drill="1" shape="square"/>
+<pad name="9" x="6.731" y="8.89" drill="1" shape="octagon"/>
+<pad name="10" x="6.731" y="6.35" drill="1" shape="octagon"/>
+<pad name="11" x="6.731" y="3.81" drill="1" shape="octagon"/>
+<pad name="12" x="6.731" y="1.27" drill="1" shape="octagon"/>
+<pad name="13" x="6.731" y="-1.27" drill="1" shape="octagon"/>
+<pad name="14" x="6.731" y="-3.81" drill="1" shape="octagon"/>
+<pad name="15" x="6.731" y="-6.35" drill="1" shape="octagon"/>
+<pad name="16" x="6.731" y="-8.89" drill="1" shape="square"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="M9040P" urn="urn:adsk.eagle:package:27676/1" type="box">
@@ -616,6 +640,30 @@ Marquardt</description>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
+<symbol name="TB6612FNG">
+<pin name="AO2" x="-15.24" y="2.54" visible="pin" length="middle" direction="out"/>
+<pin name="AO1" x="-15.24" y="5.08" visible="pin" length="middle" direction="out"/>
+<pin name="VCC" x="-15.24" y="7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="BO2" x="-15.24" y="0" visible="pin" length="middle" direction="out"/>
+<pin name="VMOT" x="-15.24" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="BO1" x="-15.24" y="-2.54" visible="pin" length="middle" direction="out"/>
+<pin name="GND@2" x="-15.24" y="-7.62" visible="pin" length="middle" direction="pwr" swaplevel="1"/>
+<pin name="PWMA" x="15.24" y="10.16" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="AIN2" x="15.24" y="7.62" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="AIN1" x="15.24" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="!STDBY!" x="15.24" y="2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="BIN1" x="15.24" y="0" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="BIN2" x="15.24" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PWMB" x="15.24" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="GND@3" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="13.462" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-11.938" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME_A4P">
@@ -698,6 +746,40 @@ Marquardt</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TB6612FNG" prefix="U" uservalue="yes">
+<description>&lt;b&gt;TB6612FNG Dual Motor Driver Carrier&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+This tiny board is an easy way to use Toshiba’s TB6612FNG dual motor driver, which can independently 
+control two bidirectional DC motors or one bipolar stepper motor. A recommended motor voltage of 4.5 V
+ to 13.5 V and peak current output of 3 A per channel (1 A continuous) make this a great motor driver for low-power motors.</description>
+<gates>
+<gate name="G$1" symbol="TB6612FNG" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="TB6612FNG">
+<connects>
+<connect gate="G$1" pin="!STDBY!" pad="12"/>
+<connect gate="G$1" pin="AIN1" pad="11"/>
+<connect gate="G$1" pin="AIN2" pad="10"/>
+<connect gate="G$1" pin="AO1" pad="3"/>
+<connect gate="G$1" pin="AO2" pad="4"/>
+<connect gate="G$1" pin="BIN1" pad="13"/>
+<connect gate="G$1" pin="BIN2" pad="14"/>
+<connect gate="G$1" pin="BO1" pad="6"/>
+<connect gate="G$1" pin="BO2" pad="5"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="8"/>
+<connect gate="G$1" pin="GND@3" pad="16"/>
+<connect gate="G$1" pin="PWMA" pad="9"/>
+<connect gate="G$1" pin="PWMB" pad="15"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="G$1" pin="VMOT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7909,97 +7991,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </deviceset>
 </devicesets>
 </library>
-<library name="pololu">
-<description>&lt;b&gt;Pololu Robotics &amp; Electronics devices&lt;/b&gt;</description>
-<packages>
-<package name="TB6612FNG">
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
-<text x="-7.62" y="11.811" size="1.27" layer="25" font="vector" ratio="20" align="top-left">&gt;NAME</text>
-<text x="0" y="-10.668" size="1.27" layer="25" font="vector" ratio="20" align="top-center">TB6612FNG</text>
-<pad name="1" x="-6.731" y="8.89" drill="0.75" shape="square"/>
-<pad name="2" x="-6.731" y="6.35" drill="0.75"/>
-<pad name="3" x="-6.731" y="3.81" drill="0.75"/>
-<pad name="4" x="-6.731" y="1.27" drill="0.75"/>
-<pad name="5" x="-6.731" y="-1.27" drill="0.75"/>
-<pad name="6" x="-6.731" y="-3.81" drill="0.75"/>
-<pad name="7" x="-6.731" y="-6.35" drill="0.75"/>
-<pad name="8" x="-6.731" y="-8.89" drill="0.75" shape="square"/>
-<pad name="9" x="6.731" y="8.89" drill="0.75"/>
-<pad name="10" x="6.731" y="6.35" drill="0.75"/>
-<pad name="11" x="6.731" y="3.81" drill="0.75"/>
-<pad name="12" x="6.731" y="1.27" drill="0.75"/>
-<pad name="13" x="6.731" y="-1.27" drill="0.75"/>
-<pad name="14" x="6.731" y="-3.81" drill="0.75"/>
-<pad name="15" x="6.731" y="-6.35" drill="0.75"/>
-<pad name="16" x="6.731" y="-8.89" drill="0.75" shape="square"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TB6612FNG">
-<pin name="AO2" x="-15.24" y="2.54" visible="pin" length="middle" direction="out"/>
-<pin name="AO1" x="-15.24" y="5.08" visible="pin" length="middle" direction="out"/>
-<pin name="VCC" x="-15.24" y="7.62" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND@1" x="-15.24" y="10.16" visible="pin" length="middle" direction="pwr"/>
-<pin name="BO2" x="-15.24" y="0" visible="pin" length="middle" direction="out"/>
-<pin name="VMOT" x="-15.24" y="-5.08" visible="pin" length="middle" direction="pwr"/>
-<pin name="BO1" x="-15.24" y="-2.54" visible="pin" length="middle" direction="out"/>
-<pin name="GND@2" x="-15.24" y="-7.62" visible="pin" length="middle" direction="pwr" swaplevel="1"/>
-<pin name="PWMA" x="15.24" y="10.16" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="AIN2" x="15.24" y="7.62" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="AIN1" x="15.24" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="!STDBY!" x="15.24" y="2.54" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="BIN1" x="15.24" y="0" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="BIN2" x="15.24" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="PWMB" x="15.24" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
-<pin name="GND@3" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<text x="-10.16" y="13.462" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-11.938" size="1.27" layer="96">TB6612FNG</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TB6612FNG" prefix="U" uservalue="yes">
-<description>&lt;b&gt;TB6612FNG Dual Motor Driver Carrier&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-This tiny board is an easy way to use Toshiba’s TB6612FNG dual motor driver, which can independently 
-control two bidirectional DC motors or one bipolar stepper motor. A recommended motor voltage of 4.5 V
- to 13.5 V and peak current output of 3 A per channel (1 A continuous) make this a great motor driver for low-power motors.</description>
-<gates>
-<gate name="G$1" symbol="TB6612FNG" x="-5.08" y="0"/>
-</gates>
-<devices>
-<device name="" package="TB6612FNG">
-<connects>
-<connect gate="G$1" pin="!STDBY!" pad="12"/>
-<connect gate="G$1" pin="AIN1" pad="11"/>
-<connect gate="G$1" pin="AIN2" pad="10"/>
-<connect gate="G$1" pin="AO1" pad="3"/>
-<connect gate="G$1" pin="AO2" pad="4"/>
-<connect gate="G$1" pin="BIN1" pad="13"/>
-<connect gate="G$1" pin="BIN2" pad="14"/>
-<connect gate="G$1" pin="BO1" pad="6"/>
-<connect gate="G$1" pin="BO2" pad="5"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@2" pad="8"/>
-<connect gate="G$1" pin="GND@3" pad="16"/>
-<connect gate="G$1" pin="PWMA" pad="9"/>
-<connect gate="G$1" pin="PWMB" pad="15"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="VMOT" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="transistor-power" urn="urn:adsk.eagle:library:400">
 <description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -8168,7 +8159,7 @@ Source: http://www.irf.com/product-info/datasheets/data/irf9530.pdf</description
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_12" device="" package3d_urn="urn:adsk.eagle:package:38169/1"/>
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="U1" library="pololu" deviceset="TB6612FNG" device=""/>
+<part name="U1" library="doogie" deviceset="TB6612FNG" device="" value="TB6612FNG"/>
 <part name="GND8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
