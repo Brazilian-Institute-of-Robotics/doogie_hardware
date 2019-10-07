@@ -31,7 +31,7 @@ eagle.epf
 *.crs
 
 *.dri
-*.drl
+# *.drl
 *.gpi
 *.pls
 *.ger
