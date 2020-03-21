@@ -8,6 +8,7 @@ This repository is intend to gather all the files regarding the Doogie Mouse rob
 - [Gerbers]\: Files used to manufacture the top and bottom boards
 - [Libraries]\: Eagle libraries used in the layout of the Doogie Mouse robot boards
 - [Schematics]\: Electronic schematics of top and bottom board in PDF format
+- [BOM]\: Bill Of Materials
 
 ## Electronic architecture
 The electronic architecture in the figure below demonstrates how Doogie Mousee components are electrically interconnected. For the purpose of better visualization, the voltage reference (Ground - GND) was omitted.
@@ -55,4 +56,5 @@ See [Hardware Setup] on Doogie wiki page!
 [Gerbers]: https://github.com/Brazilian-Institute-of-Robotics/doogie_hardware/tree/master/Gerbers
 [Libraries]: https://github.com/Brazilian-Institute-of-Robotics/doogie_hardware/tree/master/Libraries
 [Schematics]: https://github.com/Brazilian-Institute-of-Robotics/doogie_hardware/tree/master/Schematics
+[BOM]: https://github.com/Brazilian-Institute-of-Robotics/doogie_hardware/tree/master/BOM
 [Hardware Setup]: https://github.com/Brazilian-Institute-of-Robotics/doogie/wiki/Hardware-Setup
