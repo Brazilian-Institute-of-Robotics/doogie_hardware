@@ -46,10 +46,18 @@ For detailed description of components connections, see the electronic schematic
 ## Assembly Instructions
 See [Hardware Setup] on Doogie wiki page!
 
+## Purpose of the Project
+
+Doogie Mouse platform was originally developed in 2019 as an undergraduate thesis (Theoprax methodoly) at Centro Universitário SENAI CIMATEC in partnership with Brazillian Institute of Robotics, for teaching principles of artificial intelligence using high level framework for writing and reusing robot software.
+
+It's a open source project and expects modifications and contributions from it's users. 
+
 ## Change Log
 #### [1.0] - 2019-12-10
 - First version
 
+## Bugs & Feature Requests
+Please report bugs and request features using the [Issue Tracker](https://github.com/Brazilian-Institute-of-Robotics/doogie_hardware/issues).
 
 [Eagle]: https://github.com/Brazilian-Institute-of-Robotics/doogie_hardware/tree/master/Eagle
 [Autocad Eagle]: https://www.autodesk.com/products/eagle/overview?geoNavigationPreferredSite=US
